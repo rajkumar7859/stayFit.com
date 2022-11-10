@@ -6,8 +6,6 @@ import {
   Flex,
   Heading,
   Image,
-  Input,
-  Stack,
   Text,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
@@ -45,19 +43,20 @@ const Home = () => {
               className="bottom-left-column"
             ></Box>
           </Box>
+
+          
           <Box className="mid-column">
             <Box className="container">
               <Box className="heading">
                 <Heading size={{ base: "xl", sm: "2xl" }} as={"h1"}>
-                  Fitness starts with what you eat.
+                Good health starts with what you eat.
                 </Heading>
               </Box>
               <Text
                 className="description"
-                fontSize={{ base: "md", sm: "2xl", md: "2xl" }}
+                fontSize={{ base: "md", sm: "sm", md: "md" }}
               >
-                Take control of your goals. Track calories, break down
-                ingredients, and long activities with MyFitnessPal.
+                Take control of your goals. Track calories, break down ingredients, and long activities with MyFitnessPal.
               </Text>
               <Button
                 colorScheme={"blue"}
@@ -75,10 +74,31 @@ const Home = () => {
                 </Link>
               </Text>
             </Box>
+            <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
+          </Box>
+          
+          <Box className="sec_mid-column">
+              <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
+            <Box className="container">
+              <Box className="heading">
+                <Heading size={{ base: "xl", sm: "2xl" }} as={"h1"}>
+                Good health starts with what you eat.
+                </Heading>
+              </Box>
+              <Text
+                className="description"
+                fontSize={{ base: "md", sm: "sm", md: "md" }}
+              >
+                Take control of your goals. Track calories, break down ingredients, and long activities with MyFitnessPal.
+              </Text>
+            
+            </Box>
           </Box>
           <Box className="right-column"></Box>
         </Box>
-        <Box className="second-section">
+
+
+        {/* <Box className="second-section">
           <Box className="whiteLine"></Box>
           <Box className="second-section-heading">
             <Heading as={"h2"} size={{ base: "xl" }}>
@@ -103,7 +123,10 @@ const Home = () => {
               </Box>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
+
+
+
         <Box className="fourth-section">
           <Box className="fourth-section-innerBox">
             <Box className="fourth-section-heading" mt={"16"}>
@@ -327,4 +350,5 @@ const Home = () => {
     </>
   );
 };
+
 export default Home;
