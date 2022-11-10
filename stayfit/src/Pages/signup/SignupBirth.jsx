@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import {
 	Box,
 	Button,
@@ -7,33 +8,32 @@ import {
 	InputGroup,
 	InputRightElement,
 	Text,
+  Radio,
+  Center,
+  HStack,
+   RadioGroup
 } from "@chakra-ui/react";
-import React from "react";
 import SignupNavbar from "../../components/signup/SignupNavbar";
 import "./SignupStyles.css";
 import { useNavigate } from "react-router-dom";
-
-const SignupTall = () => {
-	const navigate = useNavigate();
+const SignupBirth = () => {
+    const [value ,setValue ] = useState(1)
+    const navigate = useNavigate();
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox" h="fit-content" p="20px" w='40%'>
-					<Box className="tallSubBox">
-						<Heading fontSize="20px" mb="10px">
-							How tall are you?
+			<Box className="signupWrapper" >
+				<Box className="insideBox" h="max-content" w='40%' p={'40px'}>
+					<Box className="tallSubBox" w='100%'>
+						<Heading fontSize="20px" mb="10px" mt='-1rem'>
+            Please select which sex we should use to calculate your calorie needs.
 						</Heading>
-						<Flex gap="15px">
-							<InputGroup>
-								<Input placeholder="Enter height (feet)" w="265px" />
-								<InputRightElement children={"ft"} />
-							</InputGroup>
-							<InputGroup>
-								<Input placeholder="Enter height (inches)" w="265px" />
-								<InputRightElement children={"ft"} />
-							</InputGroup>
-						</Flex>
+						<RadioGroup onChange={setValue} value={value}>
+      <Box display={'flex'} justifyContent='space-evenly' w='50%' >
+        <Radio value='1'>Male</Radio>
+        <Radio value='2'>Female</Radio>
+      </Box>
+    </RadioGroup>
 					</Box>
 
 					<Box className="tallSubBox">
@@ -76,8 +76,7 @@ const SignupTall = () => {
 			</Box>
 		</>
 	);
-};
+  
+}
 
-export default SignupTall;
-
-// /signupTall
+export default SignupBirth

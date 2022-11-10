@@ -1,4 +1,4 @@
-import { Box, Button, Heading } from "@chakra-ui/react";
+import { Box, Button, color, Heading } from "@chakra-ui/react";
 import React from "react";
 import SignupNavbar from "../../components/signup/SignupNavbar";
 import "./SignupStyles.css";
@@ -10,8 +10,8 @@ const SignupWeightGoal = () => {
 		<>
 			<SignupNavbar />
 			<Box className="signupWrapper">
-				<Box className="insideBox">
-					<Heading fontSize="25px" mb="10px">
+				<Box className="insideBox" w={'40%'}>
+					<Heading fontSize="22px" fontWeight={'650'} mt='-4rem' mb='2rem'>
 						What is your weight goal?
 					</Heading>
 					<Button
@@ -19,6 +19,10 @@ const SignupWeightGoal = () => {
 						variant="outline"
 						w="300px"
 						my="20px"
+						borderRadius={'0'}
+						borderColor='grey'
+						color='grey'
+						_hover={{color:'blue',borderColor:'blue'}}
 						onClick={() => navigate("/signupActivity")}
 					>
 						Lose Weight
@@ -27,7 +31,11 @@ const SignupWeightGoal = () => {
 						colorScheme="blue"
 						variant="outline"
 						w="300px"
+						borderRadius={'0'}
+						borderColor='grey'
+						color='grey'
 						mb="20px"
+						_hover={{color:'blue',borderColor:'blue'}}
 						onClick={() => navigate("/signupActivity")}
 					>
 						Maintain Weight
@@ -36,7 +44,11 @@ const SignupWeightGoal = () => {
 						colorScheme="blue"
 						variant="outline"
 						w="300px"
-						onClick={() => navigate("/signupActivity")}
+						borderRadius={'0'}
+						borderColor='grey'
+						color='grey'
+						_hover={{color:'blue',borderColor:'blue'}}
+					onClick={() => {navigate("/signupActivity")}}
 					>
 						Gain Weight
 					</Button>
