@@ -26,11 +26,11 @@ const SignupTall = () => {
 						</Heading>
 						<Flex gap="15px">
 							<InputGroup>
-								<Input placeholder="Enter height (feet)" w="265px" />
+								<Input placeholder="Enter height (feet)" w="100%" />
 								<InputRightElement children={"ft"} />
 							</InputGroup>
 							<InputGroup>
-								<Input placeholder="Enter height (inches)" w="265px" />
+								<Input placeholder="Enter height (inches)" w="100%" />
 								<InputRightElement children={"ft"} />
 							</InputGroup>
 						</Flex>
@@ -44,7 +44,7 @@ const SignupTall = () => {
 							It's OK to estimate. You can update this later.
 						</Text>
 						<InputGroup>
-							<Input placeholder="Enter weight (kg)" w="550px" />
+							<Input placeholder="Enter weight (kg)" w="100%" />
 							<InputRightElement children={"kg"} />
 						</InputGroup>
 					</Box>
@@ -58,7 +58,7 @@ const SignupTall = () => {
 							can always change it later.
 						</Text>
 						<InputGroup>
-							<Input placeholder="Enter weight (kg)" w="550px" />
+							<Input placeholder="Enter weight (kg)" w="100%" />
 							<InputRightElement children={"kg"} />
 						</InputGroup>
 					</Box>

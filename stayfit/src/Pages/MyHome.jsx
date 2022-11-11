@@ -476,7 +476,7 @@ const MyHome = () => {
     <Header/>
     <MainDiv>
       <AdvDiv>
-        <img src="https://tpc.googlesyndication.com/simgad/7070382364268688307" alt="" />
+        <img src="https://bit.ly/3cfFFG2" alt="" />
       </AdvDiv>
       <BodyDiv>
         <LeftDiv>

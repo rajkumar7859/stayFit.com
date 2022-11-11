@@ -8,7 +8,7 @@ const SignupWeekly = () => {
 	const navigate = useNavigate();
 
 	const handleClick = () => {
-		navigate("/signupUsername");
+		navigate("/signupCreateAccount");
 	};
 	return (
 		<>

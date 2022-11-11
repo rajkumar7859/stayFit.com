@@ -14,7 +14,7 @@ const Login = () => {
 	const dispatch = useDispatch();
   
   const googleAuth = () => {
-    window.open(`https://smooth-flavor-1645.herokuapp.com/google/callback`, "_self");
+    window.open(`https://newapi.onrender.com/callback`, "_self");
   };
 
 	const [loginCreds, setLoginCreds] = useState({
