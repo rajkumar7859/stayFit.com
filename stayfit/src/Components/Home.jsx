@@ -27,6 +27,25 @@ import NavbarPremium from "./premium/NavbarPremium";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
 
+
+const middleData=[
+  {
+    logoVar:diary,
+    headi:" Learn. Track. Improve.",
+    diss:"Keeping a food diary helps you understand your habits and increases your likehood of hitting your goals. ",
+  },
+  {
+    logoVar:barcode,
+    headi:"Logging Simplified",
+    diss:"Scan barcodes, save meals and recipes, and use Quick Tools for fast and easy food tracking.",
+  },
+  {
+    logoVar:shoe,
+    headi:"Stay Motivated.",
+    diss:"Join the World’s Largest Fitness Community for advice, tips, and support 24/7.",
+  },
+]
+
 const Home = () => {
   const navigate = useNavigate();
 
@@ -74,29 +93,49 @@ const Home = () => {
                 </Link>
               </Text>
             </Box>
-            <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
           </Box>
+            <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
+          </Box> 
           
-          <Box className="sec_mid-column">
-              <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
-            <Box className="container">
-              <Box className="heading">
-                <Heading size={{ base: "xl", sm: "2xl" }} as={"h1"}>
-                Good health starts with what you eat.
+
+
+          <Box className="meddle_Column">
+              <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Fsecondary-hero-slice%402x.png&w=512&q=75" /></Box>
+            <Box className="sec-container">
+              <Box className="sec-heading">
+                <Heading mt="10rem" size={{ base: "xl", sm: "2xl" }} as={"h1"}>
+                Log from over 14 million foods.
                 </Heading>
               </Box>
               <Text
-                className="description"
-                fontSize={{ base: "md", sm: "sm", md: "md" }}
-              >
-                Take control of your goals. Track calories, break down ingredients, and long activities with MyFitnessPal.
+                className="sec-description"
+                fontSize={{ base: "md", sm: "sm", md: "md" }}>
+                See a breakdown of calories and nutrients, compare serving sizes, and discover how the food you eat supports your goals.
               </Text>
             
             </Box>
           </Box>
           <Box className="right-column"></Box>
-        </Box>
 
+<Center mt="4rem">
+<Box textAlign="center" >
+  <Box><Heading fontSize="3rem" as={"h2"} size={{ base: "xl" }} >The Tools for Your Goals</Heading></Box>
+  <Box ><Text ml="20rem" w="46%" fontSize={{ base: "sm",md:"sm" ,lg: "md" }} >Trying to lose weight, tone up, lower your BMI, or invest in your overall health? We give you the right features to get there.</Text></Box>
+ 
+  <Flex w="78%" m={{ base: "4", md: 8, lg:'auto' }}
+              gap={{ base: "20px", lg: "40px" }}
+              flexDirection={{ base: "column", lg: "row", md: "column" }} >
+{middleData?.map((item)=>
+  <Box  key={item.logoVar} w="85%" ><Image src={item.logoVar} m={"auto"}/>
+   <Box m={{ base: 1, lg: 2 }}><Heading as={"h5"} size="md">{item.headi}</Heading></Box>
+   <Box> <Text fontSize={{ base: "md", lg: "lg" }}>{item.diss}</Text></Box>
+  </Box>
+)
+}
+</Flex>
+</Box>
+
+</Center>
 
         {/* <Box className="second-section">
           <Box className="whiteLine"></Box>
@@ -127,21 +166,21 @@ const Home = () => {
 
 
 
-        <Box className="fourth-section">
-          <Box className="fourth-section-innerBox">
-            <Box className="fourth-section-heading" mt={"16"}>
+        {/* <Box className="fourth-section">
+          <Box className="fourth-section-innerBox"> */}
+            {/* <Box className="fourth-section-heading" mt={"16"}>
               <Heading as={"h3"} size={{ base: "lg", lg: "2xl" }}>
                 The Tools for Your Goals
               </Heading>
-            </Box>
-            <Box className="fourth-section-des" mt={{ base: 2, lg: 5 }}>
+            </Box> */}
+            {/* <Box className="fourth-section-des" mt={{ base: 2, lg: 5 }}>
               <Text fontSize={{ base: "md", lg: "lg" }}>
                 Trying to lose weight, tone up, lower your BMI, or invest in
                 your overall health? We give you the right features to hit your
                 goals.
               </Text>
-            </Box>
-            <Flex
+            </Box> */}
+            {/* <Flex
               m={{ base: "4", md: 8, lg: 16 }}
               gap={{ base: "20px", lg: "40px" }}
               flexDirection={{ base: "column", lg: "row", md: "column" }}
@@ -194,14 +233,14 @@ const Home = () => {
                   </Text>
                 </Box>
               </Box>
-            </Flex>
-            <Box textAlign={"center"} p="5">
+            </Flex> */}
+            {/* <Box textAlign={"center"} p="5">
               <Button colorScheme="blue" p="6">
                 START YOUR JOURNEY TODAY
               </Button>
             </Box>
           </Box>
-        </Box>
+        </Box> */}
         <Box className="fifth-section">
           <Box>
             <Box className="fifth-section-heading">
