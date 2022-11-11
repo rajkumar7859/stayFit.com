@@ -12,7 +12,7 @@ const SignupUsername = () => {
 		if (ref.current.value) {
 			console.log(ref.current.value);
 			localStorage.setItem("username", JSON.stringify(ref.current.value));
-			navigate("/signupCreateAccount");
+			navigate("/SignupCongrats");
 		} else {
 			alert("Please fill the username");
 		}

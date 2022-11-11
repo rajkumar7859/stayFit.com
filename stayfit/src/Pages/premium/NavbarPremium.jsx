@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Image } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import "../../pages/premium/PremiumStyles.css";
-import fitnesLogo from "../../assets/logo.png";
+import fitnesLogo from "../../assets/logo.jpg";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -11,7 +11,7 @@ const NavbarPremium = () => {
 
 	const getUser = async () => {
 		try {
-			const url = "https://smooth-flavor-1645.herokuapp.com/login/success";
+			const url = "https://newapi.onrender.com/login/success";
 			const { data } = await axios.get(url, { withCredentials: true });
 			setUser(data.user._json);
 		} catch (err) {
@@ -22,7 +22,9 @@ const NavbarPremium = () => {
 	console.log(user.given_name);
 
 	const logout = () => {
-		window.open(`https://smooth-flavor-1645.herokuapp.com/logout`, "_self");
+		
+		window.open(`https://newapi.onrender.com/logout`, "_self");
+		
 	};
 
 	useEffect(() => {
@@ -38,6 +40,7 @@ const NavbarPremium = () => {
 						<Button
 							variant="ghost"
 							color="#0066EE"
+							fontWeight={'300'}
 							onClick={() => navigate("/login")}
 						>
 							Log In
@@ -46,6 +49,7 @@ const NavbarPremium = () => {
 						<Button
 							variant="ghost"
 							color="#0066EE"
+							fontWeight={'300'}
 							onClick={() => navigate("/signup")}
 						>
 							Sign Up
