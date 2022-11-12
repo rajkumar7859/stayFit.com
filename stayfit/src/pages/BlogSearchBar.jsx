@@ -1,7 +1,7 @@
 import React from 'react'
+import {recipesSearchData} from "./DropDownData"
 import style from "../styling/Recipes.module.css"
 import * as Icons from "react-icons/fa";
-import {recipesSearchData} from "./DropDownData"
 import { useState } from 'react';
 import TrendingArticles from "./TrendingArticles"
 
@@ -22,7 +22,7 @@ const BlogSearchBar = () => {
             
         
     </div>
-    <div style={{padding:"0% 5%", marginBottom:"4%"}} >
+    <div style={{ marginBottom:"4%",padding:"0% 5%"}} >
     <TrendingArticles/>
     </div>
     <div>
@@ -35,11 +35,16 @@ const BlogSearchBar = () => {
         }).map((val,key)=>{
             return (
                 <div className={style.RecipesMapCantainer} key={key}>
+
                     <div className={style.RecipeRatingImage}>
+
                         <div className={style.RecipeRatingImageForBorder}>
+
                         <img src={val.imgUrl} alt="" />
                         </div>
                     </div>
+
+                    
                     <div >
                     <h2 className={style.RecipeHeading}>{val.title}</h2>
                     <p className={style.RecipeBy}>{val.by}</p>
