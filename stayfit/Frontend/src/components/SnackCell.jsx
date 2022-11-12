@@ -77,35 +77,7 @@ const SnackCell = () => {
           </Flex>
         </Flex>
       ))}
-      {/* <Box w={"35%"} backgroundColor={"#f6f6f6"} p={1}>
-          Mango, 0.5 cup, pieces
-        </Box> */}
-      {/* <Flex w={"65%"} gap={"3px"} textAlign="center">
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            50
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            12
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            0
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            1
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            1
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            11
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            <i
-              className="fa-solid fa-circle-minus"
-              style={{ color: "red" }}
-            ></i>
-          </Box>
-        </Flex> */}
+    
       <Flex fontSize={"14px"}>
         <Box w={"35%"} p={"1"}>
           <Flex color={"blue"} fontWeight="semibold" gap={"2"}>
