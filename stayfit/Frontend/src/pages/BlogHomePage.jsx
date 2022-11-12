@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import TrendingArticles from "./TrendingArticles";
 import style from "../styling/Blog.module.css";
 import LatestArticles from "./LatestArticles";
@@ -19,4 +19,4 @@ const BlogHomePage = () => {
 
 };
 
-export default BlogHomePage;
+export default memo(BlogHomePage);
