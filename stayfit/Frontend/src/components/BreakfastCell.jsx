@@ -2,6 +2,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import {AiFillMinusCircle} from "react-icons/ai"
 
 import { deleteBreakfast, getBreakfast } from "../redux/app/action";
 
@@ -68,46 +69,16 @@ const BreakfastCell = () => {
               w="14%"
               backgroundColor={"#f6f6f6"}
               p={1}
+              bgColor="red"
               cursor="pointer"
               onClick={() => handleDeleteBreakfast(ele.id)}
             >
-              <i
-                className="fa-solid fa-circle-minus"
-                style={{ color: "red" }}
-              ></i>
+              <AiFillMinusCircle />
             </Box>
           </Flex>
         </Flex>
       ))}
-      {/* <Box w={"35%"} backgroundColor={"#f6f6f6"} p={1}>
-          Mango, 0.5 cup, pieces
-        </Box> */}
-      {/* <Flex w={"65%"} gap={"3px"} textAlign="center">
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            50
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            12
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            0
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            1
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            1
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            11
-          </Box>
-          <Box w="14%" backgroundColor={"#f6f6f6"} p={1}>
-            <i
-              className="fa-solid fa-circle-minus"
-              style={{ color: "red" }}
-            ></i>
-          </Box>
-        </Flex> */}
+      
       <Flex fontSize={"14px"}>
         <Box w={"35%"} p={"1"}>
           <Flex color={"blue"} fontWeight="semibold" gap={"2"}>

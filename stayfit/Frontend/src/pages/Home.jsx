@@ -94,11 +94,11 @@ const Home = () => {
               </Text>
             </Box>
           </Box>
-            <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
+            <Box className="topImage" ><Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-slice%402x.e3eec8a8.png&w=1920&q=75" /></Box>
           </Box> 
           
           <Box className="meddle_Column">
-              <Box><Image src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Fsecondary-hero-slice%402x.png&w=512&q=75" /></Box>
+              <Box><Image className="meddleImage" src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Fsecondary-hero-slice%402x.png&w=512&q=75" /></Box>
             <Box className="sec-container">
               <Box className="sec-heading">
                 <Heading mt="10rem" size={{ base: "xl", sm: "2xl" }} as={"h1"}>
@@ -117,14 +117,14 @@ const Home = () => {
 
 <Center mt="4rem">
 <Box textAlign="center" >
-  <Box><Heading fontSize="3rem" as={"h2"} size={{ base: "xl" }} >The Tools for Your Goals</Heading></Box>
-  <Box ><Text ml="20rem" w="46%" fontSize={{ base: "sm",md:"sm" ,lg: "md" }} >Trying to lose weight, tone up, lower your BMI, or invest in your overall health? We give you the right features to get there.</Text></Box>
+  <Box><Heading fontSize="3rem" as={"h2"} ml={{ base: "8rem",md:"5rem"}} size={{ base: "xl" }} >The Tools for Your Goals</Heading></Box>
+  <Box ><Text ml={{ base: "11rem",md:"15rem" ,lg:"24rem"  }} w="46%" fontSize={{ base: "sm",md:"sm" ,lg: "md" }} >Trying to lose weight, tone up, lower your BMI, or invest in your overall health? We give you the right features to get there.</Text></Box>
  
   <Flex w="78%" m={{ base: "4", md: 8, lg:'auto' }}
               gap={{ base: "20px", lg: "40px" }}
               flexDirection={{ base: "column", lg: "row", md: "column" }} >
 {middleData?.map((item)=>
-  <Box  key={item.logoVar} w="85%" ><Image src={item.logoVar} m={"auto"}/>
+  <Box  key={item.logoVar} w="85%" ml={{ base: "5rem",md:"8rem" ,lg:"6rem"}} ><Image src={item.logoVar} m={"auto"}/>
    <Box m={{ base: 1, lg: 2 }}><Heading as={"h5"} size="md">{item.headi}</Heading></Box>
    <Box> <Text fontSize={{ base: "md", lg: "lg" }}>{item.diss}</Text></Box>
   </Box>
@@ -206,9 +206,9 @@ const Home = () => {
             flexDirection={{ base: "column", md: "column", lg: "row" }}
             mt={{ base: 2, lg: 4 }}
           >
-            <Box className="sixth-section-cards">
+            <Box  borderTopRadius="1rem"  className="sixth-section-cards">
               <Box>
-                <Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbreakfast-300-calories.d991cc82.png&w=1920&q=75" />
+                <Image  borderTopRadius="1rem" src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbreakfast-300-calories.d991cc82.png&w=1920&q=75" />
               </Box>
               <Box m={{ base: 2, lg: 3 }} h={{ base: "40px", lg: "50px" }}>
                 <Heading as={"h5"} size={"sm"}>
@@ -221,9 +221,9 @@ const Home = () => {
                 </Text>
               </Box>
             </Box>
-            <Box className="sixth-section-cards">
+            <Box  borderTopRadius="1rem"  className="sixth-section-cards">
               <Box>
-                <Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcheat-days.a49e92b5.jpg&w=1920&q=75" />
+                <Image  borderTopRadius="1rem" src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fcheat-days.a49e92b5.jpg&w=1920&q=75" />
               </Box>
               <Box m={{ base: 2, lg: 3 }} h={{ base: "40px", lg: "50px" }}>
                 <Heading as={"h5"} size={"sm"}>
@@ -236,9 +236,9 @@ const Home = () => {
                 </Text>
               </Box>
             </Box>
-            <Box className="sixth-section-cards">
+            <Box  borderTopRadius="1rem"  className="sixth-section-cards">
               <Box>
-                <Image src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgetting-moving.e3e4042a.png&w=1920&q=75" />
+                <Image borderTopRadius="1rem" src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fgetting-moving.e3e4042a.png&w=1920&q=75" />
               </Box>
               <Box m={{ base: 2, lg: 3 }} h={{ base: "40px", lg: "50px" }}>
                 <Heading as={"h5"} size={"sm"}>

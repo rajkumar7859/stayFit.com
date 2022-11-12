@@ -254,7 +254,124 @@
 
 	.navBarTop {
 		justify-content: space-around;
+		width: 50%;
+	}
+
+	.navBarBottom {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.navBarBottom div {
+		font-size: 12px;
+	}
+
+	.navBarBottom div:nth-of-type(1) {
+		margin-left: 0px;
+	}
+
+	/* Top Section */
+	.TopSec {
+		height: fit-content;
+		flex-direction: column;
+		align-items: left;
+		justify-content: left;
+		background-image: url("../../assets/bg-signup.webp");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: left;
+		margin-top: 30px;
+	}
+
+	.TopSecLeft {
 		width: 100%;
+		flex: 100%;
+		margin-left: 50px;
+	}
+
+	.TopSecRight {
+		margin-top: -30px;
+		flex: 100%;
+	}
+
+	/* Grid options */
+
+	.gridOptions {
+		width: 90%;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.gridOptions img {
+		height: 150px;
+		margin: 10px auto;
+	}
+
+	/* YourGoalsSection */
+	.yourGoalsSection {
+		margin-top: 50px;
+		background-image: url("../../assets/bg-signup.webp");
+		background-size: cover;
+		background-position: left;
+	}
+
+	.yourGoalsSection p {
+		font-size: 12px;
+	}
+
+	.yourGoalsSection img {
+		margin: 20px auto;
+	}
+
+	/* VictoryStories */
+	.victoryStoriesSection {
+		margin-top: 40px;
+	}
+
+	.victoryStoriesSection p {
+		font-size: 14px;
+	}
+
+	.SliderContainer {
+		width: 100%;
+		flex: 1 1 1;
+		margin-top: -30px;
+	}
+
+	.sliderDataContainer {
+		flex-direction: column;
+		width: 70%;
+	}
+
+	/* FrequentlyAskedSection */
+	.FAQContainer {
+		width: 90%;
+		margin-top: 40px;
+	}
+
+	/* GoPremiumSection */
+	.GoPremiumSection {
+		width: 90%;
+		background-image: url("../../assets/bg-signup.webp");
+		background-position: cover;
+		height: fit-content;
+	}
+
+	.annualMonthlyBoxes {
+		flex-direction: column;
+	}
+}
+@media all and (max-width: 1000px) {
+	/* Navbar ************************* */
+	.PremiumNavbar img {
+		width:6rem;
+		}
+
+	.navBarTop {
+		justify-content: space-around;
+		width: 65%;
 	}
 
 	.navBarBottom {

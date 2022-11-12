@@ -2,7 +2,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-
+import { AiFillMinusCircle } from "react-icons/ai"
 import { deleteLunch, getLunch } from "../redux/app/action";
 
 const LunchCell = () => {
@@ -67,13 +67,11 @@ const LunchCell = () => {
               w="14%"
               backgroundColor={"#f6f6f6"}
               p={1}
+              bgColor="red"
               cursor="pointer"
               onClick={() => handleDeleteLunch(ele.id)}
             >
-              <i
-                className="fa-solid fa-circle-minus"
-                style={{ color: "red" }}
-              ></i>
+             <AiFillMinusCircle />
             </Box>
           </Flex>
         </Flex>

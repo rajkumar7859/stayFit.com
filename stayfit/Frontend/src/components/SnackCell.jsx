@@ -2,6 +2,8 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { AiFillMinusCircle } from "react-icons/ai"
+
 import { deleteSnack, getBreakfast, getSnack } from "../redux/app/action";
 
 const SnackCell = () => {
@@ -66,13 +68,11 @@ const SnackCell = () => {
               w="14%"
               backgroundColor={"#f6f6f6"}
               p={1}
+             bgColor="red"
               cursor="pointer"
               onClick={() => handleDeleteSnack(ele.id)}
             >
-              <i
-                className="fa-solid fa-circle-minus"
-                style={{ color: "red" }}
-              ></i>
+             < AiFillMinusCircle />
             </Box>
           </Flex>
         </Flex>
