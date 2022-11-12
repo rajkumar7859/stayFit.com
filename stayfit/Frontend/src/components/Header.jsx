@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { memo, useState } from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
 
@@ -329,4 +329,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default memo(Header);

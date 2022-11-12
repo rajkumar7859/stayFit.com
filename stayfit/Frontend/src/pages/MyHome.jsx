@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { BsFillBagCheckFill } from "react-icons/bs";
@@ -667,4 +667,4 @@ const MyHome = () => {
   );
 };
 
-export default MyHome;
+export default memo(MyHome);

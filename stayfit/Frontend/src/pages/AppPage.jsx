@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { Box, Button, Flex, Image, Input, Text } from "@chakra-ui/react";
 
 import { Sliders } from "./Slider";
@@ -15,6 +15,7 @@ const AppPage = () => {
   const [app, setApp] = useState([]);
   const [search,setSearch] = useState([]);
   const [inputValue,setInputValue] = useState('')
+  const [ loading , setLoading ]=useState(false)
 
   const onTackerEvent = ()=>{
     setApp(app.filter((e)=>e.app_category==='Activity Trackers'))
@@ -29,8 +30,10 @@ const AppPage = () => {
     console.log(app)
   }  
   let data = async () => {
+    setLoading(true)
     let res = await axios.get(`https://newapi.onrender.com/Apps`);
     setApp(res.data);
+    setLoading(false)
     console.log(app);
   };
 
@@ -58,7 +61,7 @@ const AppPage = () => {
           </div>
           <div className={Styles.d1}>
             <div className={Styles.d2}>Featured Apps</div>
-
+{loading?<Image w="20rem" src="https://www.fugusau.edu.ng/wp-content/uploads/2021/01/loading-icon-animated-gif-19.gif" />:
             <div className={Styles.d3}>
               {app.map((el) => (
                 <div className={Styles.d4}>
@@ -79,10 +82,12 @@ const AppPage = () => {
                 </div>
               ))}
             </div>
+}
 
             <div className={Styles.d1}>
               <div className={Styles.d2}>App Marketplace</div>
-              <div className={Styles.d3}>
+              {loading?<Image w="20rem" src="https://www.fugusau.edu.ng/wp-content/uploads/2021/01/loading-icon-animated-gif-19.gif" />:
+                <div className={Styles.d3}>
                 {app.map((el) => (
                   <div className={Styles.d4}>
                     <img
@@ -106,7 +111,7 @@ const AppPage = () => {
                     </div>
                   </div>
                 ))}
-              </div>
+              </div>}
             </div>
           </div>
         </div>
@@ -177,4 +182,4 @@ const AppPage = () => {
   );
 };
 
-export default AppPage;
+export default memo(AppPage);
