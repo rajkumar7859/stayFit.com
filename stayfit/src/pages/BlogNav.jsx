@@ -22,6 +22,7 @@ const BlogNav = () => {
 				<img src={logo} alt="" />
 			</div>
 			<div className={style.socialMediaIconDiv}>
+				
 				<Icons.FaFacebookSquare className={style.socialMediaIconFB} />
 				<Icons.FaTwitterSquare className={style.socialMediaIconTwitter} />
 				<Icons.FaInstagram className={style.socialMediaIconInsta} />
