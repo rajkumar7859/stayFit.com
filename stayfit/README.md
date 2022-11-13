@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+StayFit deployment link:- https://stayfits.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Short information :- stayFit allows users to track calories, monitor progress toward weight-management goals, and gain support from an online community. we make the same frontend Ui & for the backend for data. we make unique logo and unique name for our website.
+ 
+#Tech stack for frontend & backend
+Tech stack for frontend:- Redux , React-redux, React Js, CSS & Chakra-Ui.
+Tech stack for backtend:- Node Js , mongoDB & Express Js.
 
-## Available Scripts
+# Member's contribution to the project:-
+Rajkumar Vishwakarma:-Home page.
+Krishan Kumar:-Sign up & Login pages.
+Nidhi Kumari:- Blogs & Recipes pages.
+Sunil Singh:- Premium page.
+Abhishek kumar:-Apps page & Food page
 
-In the project directory, you can run:
 
-### `npm start`
+##Connect with us
+Rajkumar Vishwakarma Github link: https://github.com/rajkumar7859
+Rajkumar vishwakarma linkdin link: https://www.linkedin.com/in/rajkumar-vishwakarma-32772a209/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Krishan Kumar Github link:github.com/sdekrishan
+Krishan Kumar linkdin link:https://www.linkedin.com/in/sdekrishan/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Nidhi Kumari Github link:https://github.com/aarohi1234
+Nidhi Kumari linkdin link:https://www.linkedin.com/in/nidhi1234/
 
-### `npm test`
+Sunil Singh Github link: https://github.com/Sunilrath101
+Sunil Singh linkdin link: https://www.linkedin.com/in/sunil-singh-rathore-5834b4239/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Abhishek kumar Github link:https://github.com/Abhis113
+Abhishek kumar linkdin link: https://www.linkedin.com/in/abhishek-kumar-8915a314a/
 
-### `npm run build`
+## Installation
+#Clone repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Run npm to install all dependencies:
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Running website:
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#StayFit screenshots
+![Screenshot (97)](https://user-images.githubusercontent.com/97114184/201511835-ad5d38ad-6ab7-462c-a5f5-e714a6e900f6.png)
 
-### `npm run eject`
+![Screenshot (98)](https://user-images.githubusercontent.com/97114184/201511848-a412e390-9f61-4c27-a52c-8b8d971bba3a.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screenshot (99)](https://user-images.githubusercontent.com/97114184/201511868-dacb2c32-819a-471a-a154-f653cacfd1b2.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot (101)](https://user-images.githubusercontent.com/97114184/201511880-ad08f7d6-580f-4d2c-8285-81769fbf0cc6.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screenshot (102)](https://user-images.githubusercontent.com/97114184/201511929-773a7a04-2548-4fea-a7d4-720f6b5f0e97.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screenshot (103)](https://user-images.githubusercontent.com/97114184/201511937-5e4c7fdc-8606-451d-aba2-b7c57f6f38a1.png)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Screenshot (104)](https://user-images.githubusercontent.com/97114184/201511951-964d2422-accd-42a0-a540-8aa990fde335.png)
