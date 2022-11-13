@@ -12,6 +12,12 @@ import "./SignupStyles.css";
 import { useNavigate } from "react-router-dom";
 
 const SignupCongrats = () => {
+	let mon = new Date;
+	
+	const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+let d =mon.getDate() + " "+ monthNames[mon.getMonth()+1]
 	const navigate = useNavigate();
 	return (
 		<>
@@ -25,7 +31,7 @@ const SignupCongrats = () => {
 						Your daily net calorie goal is:
 					</Text>
 					<Text mb="10px" align="center" as="b" fontSize="4xl">
-						1500
+						2300
 					</Text>
 					<Text my="10px" align="center" as="b" fontSize="lg" color="#0066EE">
 						calories
@@ -37,7 +43,7 @@ const SignupCongrats = () => {
 					<Text align="center" as="b" fontSize="lg">
 						Lose 5 kg{" "}
 						<span style={{ color: "#A0A0A0", fontSize: "16px" }}>by</span>{" "}
-						November 2
+						{d}
 					</Text>
 
 					<Divider my="20px" />

@@ -13,8 +13,8 @@ const SignupActivity = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox" h="fit-content" p="20px" w='40%'>
+			<Box className="signupWrapper"  height={'max-content'} padding='1rem'>
+				<Box className="insideBox" h="fit-content" p="20px"  margin={'auto'} w={{base:'80%',md:'60%',lg:'40%'}}>
 					<Heading fontSize="22px" mt='2.5rem'>
 						What is your baseline activity level?
 					</Heading>
@@ -25,7 +25,7 @@ const SignupActivity = () => {
 					<Button
 						colorScheme="black"
 						variant="outline"
-						w="400px"
+						w="100%"
 						my="10px"
 						h="fit-content"
 						borderRadius={'0'}
@@ -35,7 +35,7 @@ const SignupActivity = () => {
 						_hover={{color:'blue',borderColor:'blue',border:'2px'}}	
 						onClick={handleClick}
 					>
-						<Box p="5px" textAlign="left" w="100%">
+						<Box p="5px" textAlign="left" w="100%" _hover={{color:'blue'}} h='max-content' overflow={'auto'}>
 							<Text fontSize="16px" fontWeight={'400'} color="black" _hover={{color:'blue'}}>
 								Not Very Active
 							</Text>
@@ -56,15 +56,17 @@ const SignupActivity = () => {
 						color='grey'
 						mb="10px"
 						_hover={{color:'blue',borderColor:'blue',border:'2px'}}
-						w="400px"
-						h="fit-content"
+						w="100%"
+						h="max-content"
 						onClick={handleClick}
 					>
-						<Box p="5px" textAlign="left">
-							<Text fontSize="16px" fontWeight={'400'} color="black" _hover={{color:'blue'}}>
+						<Box padding="5px" textAlign="justify" w='100%'
+						overflow={'auto '}
+						_hover={{color:'blue'}} h='max-content'>
+							<Text fontSize="16px" fontWeight={'400'} h='max-content' w='max-content' color="black" _hover={{color:'blue'}}>
 								Lightly Active
 							</Text>
-							<Text fontSize="14px" color="#909090" fontWeight={'400'} lineHeight='1.5rem'>
+							<Text fontSize="14px" color="#909090" fontWeight={'400'} w='100%' h='max-content' lineHeight='1.5rem' >
 								Spends a considerably good part of the day on your feet
 							</Text>
 							<Text fontSize="14px" color="#909090">
@@ -76,7 +78,7 @@ const SignupActivity = () => {
 					<Button
 						colorScheme="black"
 						variant="outline"
-						w="400px"
+						w="100%"
 						mb="10px"
 						borderRadius={'0'}
 						borderColor='grey'
@@ -86,8 +88,10 @@ const SignupActivity = () => {
 						h="fit-content"
 						onClick={handleClick}
 					>
-						<Box p="5px" textAlign="left">
-							<Text fontSize="16px" fontWeight={'400'} color="black" _hover={{color:'blue'}}>
+						<Box padding="5px" textAlign="justify" w='100%'
+						overflow={'auto '}
+						_hover={{color:'blue'}} h='max-content' >
+							<Text fontSize="16px" fontWeight={'400'} w='100%' color="black" _hover={{color:'blue'}}>
 								Active
 							</Text>
 							<Text fontSize="14px" color="#909090" fontWeight={'400'} lineHeight='1.5rem'>
@@ -103,7 +107,7 @@ const SignupActivity = () => {
 						colorScheme="black"
 						
 						variant="outline"
-						w="400px"
+						w="100%"
 						mb="20px"
 						borderRadius={'0'}
 						borderColor='grey'
@@ -112,8 +116,10 @@ const SignupActivity = () => {
 						h="fit-content"
 						onClick={handleClick}
 					>
-						<Box p="5px" textAlign="left" >
-							<Text fontSize="16px" fontWeight={'400'} color="black" _hover={{color:'blue'}}>
+						<Box padding="5px" textAlign="justify" w='100%'
+						overflow={'auto '}
+						_hover={{color:'blue'}} h='max-content' >
+							<Text fontSize="1rem" fontWeight={'400'} color="black" _hover={{color:'blue'}}>
 								Very Active
 							</Text>
 							<Text fontSize="14px" color="#909090" fontWeight={'400'} lineHeight='1.5rem'>

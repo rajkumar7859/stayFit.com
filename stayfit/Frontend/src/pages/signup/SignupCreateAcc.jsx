@@ -55,8 +55,8 @@ const SignupCreateAcc = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox" h="fit-content" p="20px">
+			<Box className="signupWrapper" w={'100%'} h='full' >
+				<Box className="insideBox" h="fit-content" p="20px"  margin={'auto'}>
 					<form action="submit" onSubmit={handleRegFormSubmit}>
 						<Box>
 							<Heading fontSize="20px" my="10px">

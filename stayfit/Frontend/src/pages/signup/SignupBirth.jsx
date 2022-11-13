@@ -33,8 +33,8 @@ const SignupBirth = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper" >
-				<Box className="insideBox" h="max-content" w='40%' p={'40px'}>
+			<Box className="signupWrapper" w='100%' h='max-content' p='1rem' >
+				<Box className="insideBox" h="max-content" w={{base:'80%',md:'60%',lg:'40%'}} p={'2.5rem'} margin='auto'>
 					<Box className="tallSubBox" w='100%'>
 						<Heading fontSize="20px" mb="10px" mt='-1rem'>
             Please select which sex we should use to calculate your calorie needs.
@@ -190,7 +190,7 @@ const SignupBirth = () => {
 <option value="Hong Kong">Hong Kong</option>
 <option value="Hungary">Hungary</option>
 <option value="Iceland">Iceland</option>
-<option value="India">India</option>
+<option value="India" selected>India</option>
 <option value="Indonesia">Indonesia</option>
 <option value="Iran">Iran (Islamic Republic of)</option>
 <option value="Iraq">Iraq</option>
@@ -209,7 +209,7 @@ const SignupBirth = () => {
 <option value="Kyrgyzstan">Kyrgyzstan</option>
 <option value="Lao">Lao People's Democratic Republic</option>
 <option value="Latvia">Latvia</option>
-<option value="Lebanon" selected>Lebanon</option>
+<option value="Lebanon" >Lebanon</option>
 <option value="Lesotho">Lesotho</option>
 <option value="Liberia">Liberia</option>
 <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
@@ -335,7 +335,7 @@ const SignupBirth = () => {
 					
 					</Box>
 
-					<Flex gap="20px">
+					<Flex gap="20px" w={'90%'} justifyContent='center'>
 						<Button colorScheme="blue" variant="outline" w="150px" fontSize="18px"
 						onClick={() => navigate("/signupActivity")}>
 							BACK

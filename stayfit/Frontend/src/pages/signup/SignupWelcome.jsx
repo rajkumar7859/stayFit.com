@@ -9,13 +9,13 @@ const SignupWelcome = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox">
-					<Heading fontSize="25px">Welcome! Just a few</Heading>
-					<Heading fontSize="25px">quick questions so we can customize</Heading>
-					<Heading fontSize="25px">MyFitnessPal for you.</Heading>
+		<Box className="signupWrapper" padding={'1rem'} w={'100vw'} h='max-content'>
+				<Box className="insideBox" margin={'auto'} w={{md:'90%',lg:'40%'}} p='1rem'>
+					<Heading fontSize="1.6rem">Welcome! Just a few</Heading>
+					<Heading fontSize="1.6rem">quick questions so we can customize</Heading>
+					<Heading fontSize="1.6rem">MyFitnessPal for you.</Heading>
 
-					<Button bg="#0066EE" color="white" mt="40px" w="400px" onClick={() => navigate("/signupWeightGoal")}>
+					<Button bg="#0066EE" color="white" mt="2.5rem" w={'80%'} onClick={() => navigate("/signupWeightGoal")}>
 						Continue
 					</Button>
 				</Box>

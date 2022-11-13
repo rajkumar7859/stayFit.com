@@ -18,8 +18,8 @@ const SignupTall = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox" h="fit-content" p="20px" w='40%'>
+			<Box className="signupWrapper" h='fit-content' w='100%' padding={'1rem'}>
+				<Box className="insideBox" h="fit-content" p="20px" w={{base:'80%',md:'60%',lg:'40%'}}>
 					<Box className="tallSubBox">
 						<Heading fontSize="20px" mb="10px">
 							How tall are you?
@@ -63,7 +63,7 @@ const SignupTall = () => {
 						</InputGroup>
 					</Box>
 
-					<Flex gap="20px">
+					<Flex gap="20px" w='90%' justifyContent={'center'}>
 						<Button colorScheme="blue" variant="outline" w="150px" fontSize="18px"
 						onClick={() => navigate("/signupActivity")}>
 							BACK

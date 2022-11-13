@@ -13,9 +13,9 @@ const SignupWeekly = () => {
 	return (
 		<>
 			<SignupNavbar />
-			<Box className="signupWrapper">
-				<Box className="insideBox">
-					<Heading fontSize="25px" mb="10px">
+			<Box className="signupWrapper" h='fit-content' w='100%'>
+				<Box className="insideBox" margin={'auto'} w={{base:'80%',sm:'80%',md:'80%',lg:'40%'}} > 
+					<Heading fontSize="25px" mb="10px" mt='2rem'>
 						What is your weekly goal?
 					</Heading>
 					<Text color="#A0A0A0">
@@ -28,8 +28,9 @@ const SignupWeekly = () => {
 						colorScheme="blue"
 						color="#0066EE"
 						variant="outline"
-						w="370px"
+					w="90%"
 						my="20px"
+						overflow={'auto'}
 						onClick={handleClick}
 					>
 						Lose 0.25 kilograms per week
@@ -38,8 +39,9 @@ const SignupWeekly = () => {
 						colorScheme="blue"
 						color="#0066EE"
 						variant="outline"
-						w="370px"
+						w="90%"
 						mb="20px"
+						overflow={'hidden'}
 						onClick={handleClick}
 					>
 						Lose 0.5 kilograms per week (Recommended)
@@ -48,7 +50,7 @@ const SignupWeekly = () => {
 						colorScheme="blue"
 						color="#0066EE"
 						variant="outline"
-						w="370px"
+						w="90%"
 						mb="20px"
 						onClick={handleClick}
 					>
@@ -58,8 +60,9 @@ const SignupWeekly = () => {
 						colorScheme="blue"
 						color="#0066EE"
 						variant="outline"
-						w="370px"
+						w="90%"
 						onClick={handleClick}
+						mb='2rem'
 					>
 						Lose 1 kilogram per week
 					</Button>

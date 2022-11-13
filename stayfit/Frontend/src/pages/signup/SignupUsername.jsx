@@ -22,7 +22,7 @@ const SignupUsername = () => {
 		<>
 			<SignupNavbar />
 			<Box className="signupWrapper">
-				<Box className="insideBox" h="fit-content" p="20px">
+				<Box className="insideBox" h="fit-content" p="20px"  w={{base:'80%',md:'60%',lg:'40%'}} >
 					<Heading fontSize="20px" my="10px">
 						Create a username!
 					</Heading>
@@ -30,12 +30,13 @@ const SignupUsername = () => {
 						placeholder="Create a username"
 						h="50px"
 						my="20px"
+
 						isRequired
-						w="400px"
+						w="100%"
 						ref={ref}
 					/>
 
-					<Flex gap="20px" mt="100px">
+					<Flex gap="20px" mt="5rem" w='90%' justifyContent={'center'}>
 						<Button
 							colorScheme="blue"
 							color="#0066EE"
