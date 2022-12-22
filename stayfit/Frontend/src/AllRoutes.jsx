@@ -44,8 +44,8 @@ const AllRoutes = () => {
         <Route path='/signupCreateAccount' element={<SignupCreateAcc />} />
         <Route path='/signupUsername' element={<SignupUsername />} />
         <Route path='/signupCongrats' element={<SignupCongrats />} />
-        <Route path='/foods' element={<Food />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/foods' element={<Food />} />
         <Route path='/premium' element={<Premium />} />
         <Route path="/recipes" element={<RecipesPage />} />
         <Route path='/blog' element={<BlogHomePage />} />

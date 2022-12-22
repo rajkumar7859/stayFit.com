@@ -73,7 +73,7 @@ const AppPage = () => {
                       <a
                         className={Styles.a}
                         href={el.btn_href}
-                        target="_blank"
+                        target="blank"
                       >
                         GET
                       </a>
@@ -103,7 +103,7 @@ const AppPage = () => {
                         <a
                           className={Styles.a}
                           href={el.btn_href}
-                          target="_blank"
+                          target="blank"
                         >
                           GET
                         </a>
