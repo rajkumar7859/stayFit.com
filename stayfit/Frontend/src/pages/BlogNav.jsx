@@ -22,7 +22,11 @@ const BlogNav = () => {
 				<img src={logo} alt="" style={{width:'40%',margin:'auto'}}/>
 			</div>
 			<div className={style.socialMediaIconDiv}>
-				<Icons.FaFacebookSquare className={style.socialMediaIconFB} />
+				<a href="www.google.com">
+				<Icons.FaFacebookSquare className={style.socialMediaIconFB} 
+				
+				/>
+				</a>
 				<Icons.FaTwitterSquare className={style.socialMediaIconTwitter} />
 				<Icons.FaInstagram className={style.socialMediaIconInsta} />
 				<Icons.FaPinterest className={style.socialMediaIconPin} />
@@ -37,7 +41,7 @@ const BlogNav = () => {
 				<div>WEIGHT LOSS</div>
 				<div>FITNESS</div>
 				<div>INSPIRATION</div>
-				<div>ESSENTIALS</div>
+				<div style={{ cursor: "pointer" }} onClick={() => navigate("/essential")}>ESSENTIALS</div>
 				<div>VIDEO</div>
 			</div>
 		</div>
