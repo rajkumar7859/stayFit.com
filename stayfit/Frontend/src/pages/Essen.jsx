@@ -11,7 +11,7 @@ const Essen = () => {
         
         <div className={style.line2}></div>
       </div>
-      <div></div>
+  
       <div>
         
         <div>
