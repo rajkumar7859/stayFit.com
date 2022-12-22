@@ -16,6 +16,7 @@ import MyHome from './pages/MyHome'
 import Header from './components/Header'
 import Home from './pages/Home'
 import BlogHomePage from './pages/BlogHomePage'
+import Essential from './pages/Essential'
 import Food from './pages/Food'
 import SearchPage from './pages/BreakfastSearch'
 import SearchResult from './pages/LunchSearch'
@@ -48,6 +49,7 @@ const AllRoutes = () => {
         <Route path='/login' element={<Login />} />
         <Route path='/premium' element={<Premium />} />
         <Route path="/recipes" element={<RecipesPage />} />
+        <Route path="/essential" element={<Essential />} />
         <Route path='/blog' element={<BlogHomePage />} />
         <Route path='/breakfastSearch' element={<BreakfastSearch />} />
         <Route path='/lunchSearch' element={<LunchSearch />} />
