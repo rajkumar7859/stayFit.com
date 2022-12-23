@@ -73,7 +73,7 @@ const AppPage = () => {
                       <a
                         className={Styles.a}
                         href={el.btn_href}
-                        target="blank"
+                        target="_blank"
                       >
                         GET
                       </a>
@@ -96,9 +96,19 @@ const AppPage = () => {
                       alt=""
                       href={el.app_icon_href}
                     />
-                    
-                     
-                    
+                    <div className={Styles.d4_2}>
+                      <p className={Styles.d4_3}>{el.app_name}</p>
+                      <p className={Styles.d4_4}>{el.app_category}</p>
+                      <button className={Styles.d4_5}>
+                        <a
+                          className={Styles.a}
+                          href={el.btn_href}
+                          target="_blank"
+                        >
+                          GET
+                        </a>
+                      </button>
+                    </div>
                   </div>
                 ))}
               </div>}
