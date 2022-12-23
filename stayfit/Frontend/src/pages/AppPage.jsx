@@ -52,7 +52,7 @@ const AppPage = () => {
 	};
   return (
     <>
-      <Headertop />
+      <Headertop/>
       <Header />
       <div className={Styles.main}>
         <div>
