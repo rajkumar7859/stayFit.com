@@ -42,7 +42,7 @@ const BlogNav = () => {
 				<div>FITNESS</div>
 				<div>INSPIRATION</div>
 				<div style={{ cursor: "pointer" }} onClick={() => navigate("/essential")}>ESSENTIALS</div>
-				<div>VIDEO</div>
+				<div style={{ cursor: "pointer" }} onClick={() => navigate("/video")}>VIDEO</div>
 			</div>
 		</div>
 	);
