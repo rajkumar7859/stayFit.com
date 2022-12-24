@@ -26,7 +26,7 @@ const Essen = () => {
         <Text fontSize="29px" fontWeight={28}>Essentials-Guides </Text>
         <Box display="flex">
     
-        <Text fontSize="28px" fontWeight={28} color="grey"> NUTRITION & WEIGHT LOSS</Text>
+        <Text fontSize="28px" fontWeight={28} color="grey"> NUTRITION And  WEIGHT LOSS</Text>
         <Box  className={style.line3}></Box>
         </Box>
        </Box>

@@ -26,6 +26,7 @@ import DinnerSearch from './pages/DinnerSearch'
 import SnackSearch from './pages/SnackSearch'
 import Exercise from './pages/Exercise/Exercise'
 import SignupBirth from './pages/signup/SignupBirth'
+import { Video } from './pages/Video'
 
 const AllRoutes = () => {
   return (
@@ -58,7 +59,7 @@ const AllRoutes = () => {
         <Route path='/myHome' element={<MyHome/>} />
         <Route path='/apps' element={<AppPage />} />
         <Route path='/exercise' element={<Exercise/>} />
-
+        <Route path='/video' element={<Video/>} />
 
 
     </Routes>
