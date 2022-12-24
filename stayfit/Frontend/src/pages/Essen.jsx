@@ -30,7 +30,7 @@ const Essen = () => {
         <Box  className={style.line3}></Box>
         </Box>
        </Box>
-       
+       <br></br>
         <div className={style.trendingBlogImages}>
           <div>
           <img
