@@ -6,5 +6,7 @@ Short information :- stayFit allows users to track calories, monitor progress to
 Area Of Responsibility: 
 
 Rajkumar Vishvakarma - Home Page
+
 Abhishek Kumar - App page & Food Page (also contributed by Rajumar vishvakarma)
+
 Krishan Kumar - Login & signup page
