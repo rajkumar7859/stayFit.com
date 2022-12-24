@@ -22,14 +22,28 @@ const BlogNav = () => {
 				<img src={logo} alt="" style={{width:'40%',margin:'auto'}}/>
 			</div>
 			<div className={style.socialMediaIconDiv}>
-				<a href="www.google.com">
+				<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fblog.myfitnesspal.com%2Fvideo%2F">
 				<Icons.FaFacebookSquare className={style.socialMediaIconFB} 
 				
 				/>
 				</a>
-				<Icons.FaTwitterSquare className={style.socialMediaIconTwitter} />
-				<Icons.FaInstagram className={style.socialMediaIconInsta} />
-				<Icons.FaPinterest className={style.socialMediaIconPin} />
+				<a
+            href="https://twitter.com/intent/tweet?text=Video%20@MyFitnessPal%20-%20https%3A%2F%2Fblog.myfitnesspal.com%2Fvideo%2F"
+            target="_blank"
+            rel="noreferrer"
+          >
+         <Icons.FaTwitterSquare className={style.socialMediaIconTwitter} /></a>
+		 
+		 <a
+            href="https://twitter.com/intent/tweet?text=Video%20@MyFitnessPal%20-%20https%3A%2F%2Fblog.myfitnesspal.com%2Fvideo%2F"
+            target="_blank"
+            rel="noreferrer"
+          ><Icons.FaInstagram className={style.socialMediaIconInsta} /></a>
+					<a
+            href="https://www.pinterest.com/pin/create/bookmarklet/?url=https%3A%2F%2Fblog.myfitnesspal.com%2Fvideo%2F&is_video=true"
+            target="_blank"
+            rel="noreferrer"
+          ><Icons.FaPinterest className={style.socialMediaIconPin} /></a>
 				<hr />
 				<Icons.FaSearch className={style.socialMediaIconSearch} />
 			</div>
