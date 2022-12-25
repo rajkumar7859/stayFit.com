@@ -10,3 +10,5 @@ Rajkumar Vishvakarma - Home Page
 Abhishek Kumar - App page & Food Page (also contributed by Rajumar vishvakarma)
 
 Krishan Kumar - Login & signup page
+
+Nidhi Kumari -  Work on Navbar Blog Section and their subpages
