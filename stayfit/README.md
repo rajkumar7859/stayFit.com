@@ -1,4 +1,4 @@
-StayFit deployment link:- https://stayfits.vercel.app/
+StayFit deployment link:- https://coruscating-shortbread-53a253.netlify.app//
 
 Short information :- stayFit allows users to track calories, monitor progress toward weight-management goals, and gain support from an online community. we make the same frontend Ui & for the backend for data. we make unique logo and unique name for our website.
  
